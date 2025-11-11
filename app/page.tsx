@@ -1,46 +1,51 @@
 // app/page.tsx
-import ProjectCard from '@/components/ProjectCard';
-import { projects } from '@/data/projects';
-
 export default function Home() {
   return (
-    <main className="container">
-      <nav className="section" aria-label="Navigation principale">
-        <strong>{'{Ton Nom}'}</strong>
-        <div>
-          <a href="#projets">Projets</a> · <a href="#contact">Contact</a>
-        </div>
-      </nav>
-
-      <header className="section">
-        <h1>Salut, je suis {'Jade DOGO'}</h1>
-        <p>Je conçois des sites/apps en {'React'} — disponible pour missions.</p>
-        <p style={{ marginTop: 12 }}>
+    <>
+      <section className="section hero">
+        <h1>Salut, je suis Jade DOGO</h1>
+        <p>Développeuse web — je conçois des sites et applications modernes.</p>
+        <p>
           <a className="btn" href="#contact">Me contacter</a>
-          {' '}<a href="https://github.com/Jade2097" target="_blank" rel="noreferrer">GitHub</a>
-          {' · '}<a href="https://linkedin.com/in/jadedogo" target="_blank" rel="noreferrer">LinkedIn</a>
         </p>
-      </header>
+      </section>
 
-      <section id="projets" className="section">
-        <h2>Projets</h2>
+      <section className="section">
+        <h2>Derniers projets</h2>
         <div className="grid">
-          {projects.map((p) => (
-            <ProjectCard key={p.title} {...p} />
-          ))}
+          <article className="card">
+            <img src="/assets/p1.jpg" alt="Projet 1" width={1200} height={800} />
+            <h3>Project One</h3>
+            <p>Une application web réactive avec une interface claire.</p>
+            <div>
+              <span className="badge">Next.js</span>{' '}
+              <span className="badge">TypeScript</span>
+            </div>
+            <p>
+              <a className="btn" href="/projects">Voir tous les projets</a>
+            </p>
+          </article>
+
+          <article className="card">
+            <img src="/assets/p2.jpg" alt="Projet 2" width={1200} height={800} />
+            <h3>Project Two</h3>
+            <p>Intégration responsive et performances optimisées.</p>
+            <div>
+              <span className="badge">React</span>{' '}
+              <span className="badge">CSS</span>
+            </div>
+          </article>
         </div>
       </section>
 
       <section id="contact" className="section">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></p>
-        <p>Basé en France • Ouvert aux missions freelance</p>
+        <p>Envie de travailler ensemble ? Écrivez-moi :</p>
+        <p>
+          <a href="mailto:contact@jadedogo.dev" className="btn">contact@jadedogo.dev</a>
+        </p>
       </section>
-
-      <footer className="footer">
-        © {new Date().getFullYear()} {'{Ton Nom}'} — Portfolio
-      </footer>
-    </main>
+    </>
   );
 }
 
