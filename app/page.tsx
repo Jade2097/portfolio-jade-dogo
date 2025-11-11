@@ -13,12 +13,12 @@ export default function Home() {
       </nav>
 
       <header className="section">
-        <h1>Salut, je suis {'{Ton Nom}'}</h1>
-        <p>Je conçois des sites/apps en {'{ta stack}'} — disponible pour missions.</p>
+        <h1>Salut, je suis {'Jade DOGO'}</h1>
+        <p>Je conçois des sites/apps en {'React'} — disponible pour missions.</p>
         <p style={{ marginTop: 12 }}>
           <a className="btn" href="#contact">Me contacter</a>
-          {' '}<a href="https://github.com/{tonUser}" target="_blank" rel="noreferrer">GitHub</a>
-          {' · '}<a href="https://linkedin.com/in/{tonLinkedin}" target="_blank" rel="noreferrer">LinkedIn</a>
+          {' '}<a href="https://github.com/Jade2097" target="_blank" rel="noreferrer">GitHub</a>
+          {' · '}<a href="https://linkedin.com/in/jadedogo" target="_blank" rel="noreferrer">LinkedIn</a>
         </p>
       </header>
 

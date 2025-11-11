@@ -1,4 +1,6 @@
 // app/layout.tsx
+import './globals.css';
+
 export const metadata = {
   title: '{Ton Nom} — Portfolio',
   description: 'Projets, compétences et contact.',
