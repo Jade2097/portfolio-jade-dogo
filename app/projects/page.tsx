@@ -1,16 +1,47 @@
-export const metadata = { title: "Projets" };
+// app/projects/page.tsx
+import type { Metadata } from 'next';
+import { projects } from '@/data/projects';
+
+export const metadata: Metadata = { title: 'Projets — Jade DOGO' };
 
 export default function ProjetsPage() {
   return (
     <main className="container">
       <h1>Mes projets</h1>
-      <p>Quelques réalisations récentes.</p>
-      {/* Remplace ci-dessous par une vraie liste */}
-      <ul>
-        <li>Projet 1</li>
-        <li>Projet 2</li>
-      </ul>
+      <p className="muted">Quelques réalisations récentes.</p>
+
+      <div className="grid" role="list">
+        {projects.map((p) => (
+          <article className="card" role="listitem" key={p.title}>
+            <img
+              src={p.image}
+              alt={`Aperçu du projet « ${p.title} »`}
+              width={1200}
+              height={800}
+              loading="lazy"
+            />
+            <div className="content">
+              <h3>{p.title}</h3>
+              <p className="muted">{p.description}</p>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 8 }}>
+                {p.tech.map(t => <span className="badge" key={t}>{t}</span>)}
+              </div>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                {p.demo && (
+                  <a className="btn" href={p.demo} target="_blank" rel="noopener noreferrer">
+                    Démo
+                  </a>
+                )}
+                {p.code && (
+                  <a className="btn" href={p.code} target="_blank" rel="noopener noreferrer">
+                    Code
+                  </a>
+                )}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
     </main>
   );
 }
-
