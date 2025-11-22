@@ -26,12 +26,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="header container">
           <strong>Jade DOGO</strong>
-          <nav className="nav">
-            <a href="/">Accueil</a>
-            <a href="/projects">Projets</a>
-            <a href="/about">À propos</a>
-            <a href="#contact">Contact</a>
-          </nav>
+           <nav className="nav">
+             <a href="/">Accueil</a>
+             <a href="/projects">Projets</a>
+             <a href="/about">À propos</a>
+             <a href="/#contact">Contact</a>
+           </nav>
         </header>
         <main className="container">
           {children}

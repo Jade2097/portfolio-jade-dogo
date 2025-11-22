@@ -11,7 +11,7 @@ export default function AboutPage() {
       <ul>
         <li>Stack: Next.js, React, TypeScript, CSS</li>
         <li>Basée en France — ouverte aux missions à distance</li>
-        <li>Contact: <a href="mailto:contact@jadedogo.dev">contact@jadedogo.dev</a></li>
+        <li>Contact: <a href="mailto:jadedogo08@gmail.com">jadedogo08@gmail.com</a></li>
       </ul>
     </section>
   );
