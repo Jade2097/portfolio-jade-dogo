@@ -3,11 +3,21 @@ export default function Home() {
   return (
     <main className="container">
       <section className="section hero">
+        <p className="kicker">Freelance React & Next.js</p>
         <h1>Salut, je suis Jade DOGO</h1>
-        <p className="muted">Développeuse web — je conçois des sites et applications modernes.</p>
-        <p>
-          <a className="btn" href="/#contact">Me contacter</a>
+        <p className="muted">
+          Développeuse Web spécialisée en React & Next.js — j’aide les entreprises à créer des
+          applications modernes, rapides et scalables.
         </p>
+        <ul className="muted" style={{ display: 'grid', gap: 4, margin: '12px 0' }}>
+          <li>Interfaces rapides et optimisées</li>
+          <li>Expérience utilisateur moderne</li>
+          <li>Code propre, maintenable et sécurisé</li>
+        </ul>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+          <a className="btn" href="/#contact">Réserver un appel gratuit</a>
+          <span className="badge">+5 projets réalisés — collaborations avec écoles, startups et PME</span>
+        </div>
       </section>
 
       <section className="section" aria-labelledby="last-projects-title">
@@ -23,7 +33,10 @@ export default function Home() {
             />
             <div className="content">
               <h3>Leadslight</h3>
-              <p className="muted">Mini CRM Next.js/Prisma pour centraliser les leads, mises à jour et export CSV.</p>
+              <p className="muted">
+                Mini CRM Next.js/Prisma pour centraliser les leads, suivre les statuts et exporter en CSV.
+                Rôle : dev full-stack & UX. Impact : pipeline unifié et reporting immédiat.
+              </p>
               <div>
                 <span className="badge">Next.js</span>{' '}
                 <span className="badge">TypeScript</span>{' '}
@@ -44,7 +57,10 @@ export default function Home() {
             />
             <div className="content">
               <h3>Atelier Korrigan</h3>
-              <p className="muted">Vitrine élégante mêlant savoir‑faire artisanal, design contemporain et prise de contact rapide.</p>
+              <p className="muted">
+                Vitrine premium Next.js pour pièces sur mesure. Rôle : conception UI/UX, intégration et SEO.
+                Impact : parcours simplifié et CTA mis en avant pour générer plus de demandes.
+              </p>
               <div>
                 <span className="badge">Next.js</span>{' '}
                 <span className="badge">TypeScript</span>{' '}

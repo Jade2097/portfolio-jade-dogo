@@ -22,10 +22,22 @@ export default function ProjetsPage() {
             />
             <div className="content">
               <h3>{p.title}</h3>
-              <p className="muted">{p.description}</p>
+              <p className="muted" style={{ marginBottom: 8 }}>{p.description}</p>
+
+              <p className="muted" style={{ marginBottom: 8 }}>
+                <strong>Rôle :</strong> {p.role}
+              </p>
+
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 8 }}>
                 {p.tech.map(t => <span className="badge" key={t}>{t}</span>)}
               </div>
+
+              <p className="muted" style={{ marginBottom: 4 }}>
+                <strong>Challenge :</strong> {p.challenge}
+              </p>
+              <p className="muted" style={{ marginBottom: 12 }}>
+                <strong>Impact :</strong> {p.impact}
+              </p>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {p.demo && (
                   <a className="btn" href={p.demo} target="_blank" rel="noopener noreferrer">
