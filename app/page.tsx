@@ -15,36 +15,40 @@ export default function Home() {
         <div className="grid" role="list">
           <article className="card" role="listitem">
             <img
-              src="/assets/p1.jpg"
-              alt="Capture de l’app Project One : interface claire et tableau de bord"
+              src="/assets/acceuil_leadslight.png"
+              alt="Capture de Leadslight : tableau de bord des leads"
               width={1200}
               height={800}
               loading="lazy"
             />
             <div className="content">
-              <h3>Project One</h3>
-              <p className="muted">Une application web réactive avec une interface claire.</p>
+              <h3>Leadslight</h3>
+              <p className="muted">Mini CRM Next.js/Prisma pour centraliser les leads, mises à jour et export CSV.</p>
               <div>
                 <span className="badge">Next.js</span>{' '}
-                <span className="badge">TypeScript</span>
+                <span className="badge">TypeScript</span>{' '}
+                <span className="badge">Tailwind CSS</span>{' '}
+                <span className="badge">Prisma</span>{' '}
+                <span className="badge">PostgreSQL</span>
               </div>
             </div>
           </article>
 
           <article className="card" role="listitem">
             <img
-              src="/assets/p2.jpg"
-              alt="Aperçu Project Two : interface responsive optimisée pour mobile"
+              src="/assets/page_d'acceuil_atelier-korrigan.png"
+              alt="Aperçu Atelier Korrigan : site vitrine artisanal"
               width={1200}
               height={800}
               loading="lazy"
             />
             <div className="content">
-              <h3>Project Two</h3>
-              <p className="muted">Intégration responsive et performances optimisées.</p>
+              <h3>Atelier Korrigan</h3>
+              <p className="muted">Vitrine élégante mêlant savoir‑faire artisanal, design contemporain et prise de contact rapide.</p>
               <div>
-                <span className="badge">React</span>{' '}
-                <span className="badge">CSS</span>
+                <span className="badge">Next.js</span>{' '}
+                <span className="badge">TypeScript</span>{' '}
+                <span className="badge">Tailwind CSS</span>
               </div>
             </div>
           </article>

@@ -10,19 +10,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
-    description: "Application web réactive avec UI claire.",
-    tech: ["Next.js", "TypeScript", "CSS"],
-    demo: "https://exemple-demo-1.com",
-    code: "https://github.com/jade-dogo/project-one",
-    image: "/assets/p1.jpg"
+    title: "Leadslight",
+    description: "LeadsLight est un mini CRM Next.js/Prisma qui centralise les leads, permet de les mettre à jour et d’exporter en CSV, avec une base Postgres hébergée.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+    demo: "https://leadslight.vercel.app/",
+    code: "https://github.com/Jade2097/leadslight",
+    image: "/assets/acceuil_leadslight.png"
   },
   {
-    title: "Project Two",
-    description: "Intégration responsive et performances optimisées.",
-    tech: ["React", "CSS"],
-    demo: "https://exemple-demo-2.com",
-    code: "https://github.com/jade-dogo/project-two",
-    image: "/assets/p2.jpg"
+    title: "Atelier Korrigan",
+    description: "Atelier Korrigan : vitrine élégante de pièces et projets sur mesure, mêlant savoir‑faire artisanal et design contemporain avec contact rapide.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    demo: "https://atelier-korrigan.vercel.app/",
+    code: "https://github.com/Jade2097/atelier-korrigan",
+    image: "/assets/page_d'acceuil_atelier-korrigan.png"
   }
 ];
