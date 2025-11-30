@@ -6,18 +6,38 @@ export default function Home() {
         <p className="kicker">Freelance React & Next.js</p>
         <h1>Salut, je suis Jade DOGO</h1>
         <p className="muted">
-          Développeuse Web spécialisée en React & Next.js — j’aide les entreprises à créer des
-          applications modernes, rapides et scalables.
+          Développeuse web spécialisée en React & Next.js — je conçois des interfaces modernes, performantes et pensées pour l’utilisateur.
+        </p>
+        <p className="muted" style={{ marginTop: 4 }}>
+          J’aide les entreprises, startups et indépendants à transformer leurs idées en produits digitaux efficaces et élégants.
         </p>
         <ul className="muted" style={{ display: 'grid', gap: 4, margin: '12px 0' }}>
-          <li>Interfaces rapides et optimisées</li>
-          <li>Expérience utilisateur moderne</li>
-          <li>Code propre, maintenable et sécurisé</li>
+          <li>Performance & rapidité</li>
+          <li>Design moderne et expérience utilisateur soignée</li>
+          <li>Code propre, maintenable et évolutif</li>
         </ul>
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+          <a className="btn" href="/#contact">Discutons de votre projet</a>
           <a className="btn" href="/#contact">Réserver un appel gratuit</a>
-          <span className="badge">+5 projets réalisés — collaborations avec écoles, startups et PME</span>
+          <a className="btn" href="/#contact">Demander un devis</a>
         </div>
+        <p className="badge" style={{ marginTop: 12 }}>
+          +5 projets réalisés • Expérience avec Next.js, React, TypeScript • Disponible pour missions freelance
+        </p>
+      </section>
+
+      <section className="section" aria-label="Disponibilité freelance">
+        <article className="card" style={{ borderStyle: 'dashed' }}>
+          <div className="content" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+            <div style={{ flex: 1, minWidth: 220 }}>
+              <p className="kicker" style={{ marginBottom: 4 }}>Disponibilité freelance</p>
+              <p className="muted" style={{ margin: 0 }}>
+                Disponible dès maintenant • Missions front-end React/Next.js, landing pages, SaaS.
+              </p>
+            </div>
+            <a className="btn" href="/#contact">Discutons de votre projet</a>
+          </div>
+        </article>
       </section>
 
       <section className="section" aria-labelledby="last-projects-title">
@@ -34,8 +54,8 @@ export default function Home() {
             <div className="content">
               <h3>Leadslight</h3>
               <p className="muted">
-                Mini CRM Next.js/Prisma pour centraliser les leads, suivre les statuts et exporter en CSV.
-                Rôle : dev full-stack & UX. Impact : pipeline unifié et reporting immédiat.
+                Mini CRM Next.js/Prisma pour qualifier et suivre les leads avec exports CSV fiables.
+                Rôle : front-end, UX et data-layer. Impact : pipeline unifié et reporting immédiat.
               </p>
               <div>
                 <span className="badge">Next.js</span>{' '}
@@ -58,8 +78,8 @@ export default function Home() {
             <div className="content">
               <h3>Atelier Korrigan</h3>
               <p className="muted">
-                Vitrine premium Next.js pour pièces sur mesure. Rôle : conception UI/UX, intégration et SEO.
-                Impact : parcours simplifié et CTA mis en avant pour générer plus de demandes.
+                Vitrine premium Next.js pour pièces sur mesure. Rôle : UI/UX, intégration et SEO.
+                Impact : parcours simplifié, CTA visibles et davantage de demandes entrantes.
               </p>
               <div>
                 <span className="badge">Next.js</span>{' '}
@@ -115,10 +135,24 @@ export default function Home() {
 
       <section id="contact" className="section scroll-mt-24">
         <h2>Contact</h2>
-        <p className="muted">Envie de travailler ensemble ? Écrivez‑moi :</p>
-        <p>
+        <p className="muted">
+          Je suis disponible pour vos projets freelance : landing pages, front-end, intégrations, applications Next.js, refontes…
+        </p>
+        <p className="muted">Réponse assurée sous 24 à 48h.</p>
+        <p className="muted">Décrivez-moi votre projet, je reviens vers vous très vite.</p>
+
+        <p style={{ marginTop: 12 }}>
           <a href="mailto:jadedogo08@gmail.com" className="btn">jadedogo08@gmail.com</a>
         </p>
+
+        <div style={{ marginTop: 16 }} className="muted">
+          <p style={{ marginBottom: 4 }}>Champs suggérés pour votre message :</p>
+          <ul style={{ marginTop: 0 }}>
+            <li>Nom</li>
+            <li>Email</li>
+            <li>Message / description du projet</li>
+          </ul>
+        </div>
       </section>
     </main>
   );

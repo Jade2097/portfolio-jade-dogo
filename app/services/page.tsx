@@ -7,49 +7,49 @@ const services = [
   {
     title: 'Développement d’interfaces modernes (React, Next.js)',
     description:
-      'Interfaces rapides, accessibles et scalables pour vos produits ou espaces client. Architecture front solide, composants réutilisables et performances optimisées.',
+      'Conception et développement d’interfaces réactives pour produits web et espaces client. Architecture front solide, composants réutilisables et performances maîtrisées sur desktop et mobile.',
     gets: [
       'Design system et composants sur mesure',
-      'Gestion d’état propre (server/client), formulaires, auth',
-      'Optimisations perfs et accessibilité'
+      'Gestion d’état fiable (server/client), formulaires, auth',
+      'Optimisations performances et accessibilité'
     ],
-    value: 'Lancement plus rapide, expérience fluide et support réduit grâce à une base front robuste.',
+    value: 'Vous lancez plus vite, avec une expérience fluide et moins de support grâce à un front robuste.',
     subject: 'Devis — Interfaces modernes'
   },
   {
     title: 'Création de landing pages premium',
     description:
-      'Landing pages orientées conversion : structure claire, argumentaire percutant, sections preuve sociale et CTA visibles. SEO technique et mesure des performances.',
+      'Landing pages orientées conversion avec argumentaire clair, sections preuve sociale et CTA visibles. Intégration rapide et optimisée pour le SEO et le tracking.',
     gets: [
-      'Conception UX/structure, copy et CTA optimisés',
+      'Structure UX, copy et CTA optimisés',
       'Intégration Next.js/Tailwind prête pour A/B test',
-      'Tracking (analytics, events), SEO technique'
+      'Tracking analytics/events et SEO technique'
     ],
-    value: 'Plus de leads qualifiés et un coût d’acquisition mieux maîtrisé grâce à des pages qui convertissent.',
+    value: 'Plus de leads qualifiés et un coût d’acquisition maîtrisé grâce à des pages qui convertissent et chargent vite.',
     subject: 'Devis — Landing page'
   },
   {
     title: 'Développement front-end de SaaS',
     description:
-      'Dashboards, modules métier et onboarding soignés. Auth, rôles, formulaires complexes, tableaux filtrables, graphiques, exports CSV/PDF.',
+      'Dashboards, modules métier et onboarding soignés : auth, rôles, formulaires complexes, tableaux filtrables, graphiques et exports CSV/PDF.',
     gets: [
       'Architecture front modulaire (Next.js/React)',
       'UI de dashboards (tables, charts, filtres, exports)',
       'Flows d’onboarding, billing et notifications'
     ],
-    value: 'Adoption et rétention accrues grâce à un SaaS clair, fiable et agréable à utiliser.',
+    value: 'Un SaaS clair, fiable et performant qui améliore l’adoption et la rétention des utilisateurs.',
     subject: 'Devis — Front SaaS'
   },
   {
     title: 'Refonte UX/UI + intégration',
     description:
-      'Audit rapide, nouvelles maquettes légères puis intégration pixel-perfect. Parcours simplifiés, hiérarchie visuelle claire et performances préservées.',
+      'Audit ciblé, maquettes légères puis intégration pixel-perfect. Parcours simplifiés, hiérarchie visuelle claire et performances préservées.',
     gets: [
       'Audit UX/UI et recommandations actionnables',
       'Prototypes/maquettes et design system cohérent',
       'Intégration Next.js/Tailwind optimisée'
     ],
-    value: 'Meilleure conversion et réduction des frictions grâce à des parcours repensés et mesurables.',
+    value: 'Moins de frictions et plus de conversions grâce à des parcours repensés et mesurables.',
     subject: 'Devis — Refonte UX/UI'
   },
   {
@@ -61,7 +61,7 @@ const services = [
       'Respect strict du design (typographie, espacements, états)',
       'Perf & accessibilité (lighthouse, aria, focus)'
     ],
-    value: 'Livraison rapide sans dette technique front, pour un produit cohérent et maintenable.',
+    value: 'Livraison rapide sans dette front : produit cohérent, maintenable et prêt à évoluer.',
     subject: 'Devis — Intégration design'
   }
 ] as const;
@@ -73,8 +73,7 @@ export default function ServicesPage() {
         <p className="kicker">Services</p>
         <h1>Prestations React / Next.js</h1>
         <p className="muted">
-          J’aide les équipes marketing et produit à livrer des interfaces premium, rapides et orientées business,
-          en apportant une exécution soignée et mesurable.
+          J’aide les entreprises à concevoir des interfaces modernes, performantes et bien pensées, avec un focus business clair.
         </p>
 
         <div className="grid" role="list">
@@ -102,6 +101,20 @@ export default function ServicesPage() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div style={{ marginTop: 32 }}>
+          <p className="muted" style={{ marginBottom: 12 }}>
+            Besoin d’un accompagnement front-end premium ? Discutons de votre projet.
+          </p>
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+            <a className="btn" href="mailto:jadedogo08@gmail.com?subject=Discuter%20de%20votre%20projet">
+              Discutons de votre projet
+            </a>
+            <a className="btn" href="mailto:jadedogo08@gmail.com?subject=Demander%20un%20devis">
+              Demander un devis
+            </a>
+          </div>
         </div>
       </section>
     </main>

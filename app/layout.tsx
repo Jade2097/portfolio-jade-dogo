@@ -29,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
            <nav className="nav">
              <a href="/">Accueil</a>
              <a href="/projects">Projets</a>
+             <a href="/services">Services</a>
              <a href="/about">À propos</a>
              <a href="/#contact">Contact</a>
            </nav>
@@ -43,4 +44,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-

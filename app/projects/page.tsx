@@ -38,6 +38,12 @@ export default function ProjetsPage() {
               <p className="muted" style={{ marginBottom: 12 }}>
                 <strong>Impact :</strong> {p.impact}
               </p>
+              <p className="muted" style={{ marginBottom: 12 }}>
+                Vous avez un projet similaire ?{' '}
+                <a href="mailto:jadedogo08@gmail.com" className="muted" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                  Contactez-moi
+                </a>.
+              </p>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {p.demo && (
                   <a className="btn" href={p.demo} target="_blank" rel="noopener noreferrer">
