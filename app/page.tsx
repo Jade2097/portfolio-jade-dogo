@@ -83,7 +83,7 @@ export default function Home() {
                 <li>Stripe abonnements, admin, doc</li>
               </ul>
               <p className="badge">Stack: Next.js, Nest/Express, Prisma, PostgreSQL (Supabase), Stripe</p>
-              <p className="price">Délai: 4–6 sem • À partir de: 10 000 € HT</p>
+              <p className="price">Délai: 4–6 sem • À partir de: 4 000 € HT</p>
             </div>
           </article>
         </div>
