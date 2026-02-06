@@ -1,6 +1,12 @@
 // app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import ClientLayout from './client-layout';
+import Navbar from '@/components/layout/Navbar';
+import CustomCursor from '@/components/animations/CustomCursor';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Jade DOGO — Portfolio',
@@ -23,19 +29,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body>
-        <header className="header container">
-          <strong>Jade DOGO</strong>
-           <nav className="nav">
-             <a href="/">Accueil</a>
-             <a href="/projects">Projets</a>
-             <a href="/services">Services</a>
-             <a href="/about">À propos</a>
-             <a href="/#contact">Contact</a>
-           </nav>
-        </header>
+      <body className={inter.className}>
+        <Navbar />
+        <CustomCursor />
+        <div className="nav-spacer" aria-hidden="true" />
         <main className="container">
-          {children}
+          <ClientLayout>{children}</ClientLayout>
         </main>
         <footer className="footer container">
           © {new Date().getFullYear()} Jade DOGO — Tous droits réservés

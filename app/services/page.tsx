@@ -7,62 +7,62 @@ const services = [
   {
     title: 'Développement d’interfaces modernes (React, Next.js)',
     description:
-      'Conception et développement d’interfaces réactives pour produits web et espaces client. Architecture front solide, composants réutilisables et performances maîtrisées sur desktop et mobile.',
+      'Design and development of reactive interfaces for web products and client areas. Solid front-end architecture, reusable components and mastered performances on desktop and mobile.',
     gets: [
-      'Design system et composants sur mesure',
-      'Gestion d’état fiable (server/client), formulaires, auth',
-      'Optimisations performances et accessibilité'
+      'Custom design system and components',
+      'Reliable state management (server/client), forms, auth',
+      'Performance optimizations and accessibility'
     ],
-    value: 'Vous lancez plus vite, avec une expérience fluide et moins de support grâce à un front robuste.',
-    subject: 'Devis — Interfaces modernes'
+    value: 'You launch faster, with a smooth experience and less support thanks to a robust front-end.',
+    subject: 'Quote — Modern interfaces'
   },
   {
-    title: 'Création de landing pages premium',
+    title: 'Premium landing page creation',
     description:
-      'Landing pages orientées conversion avec argumentaire clair, sections preuve sociale et CTA visibles. Intégration rapide et optimisée pour le SEO et le tracking.',
+      'Conversion-oriented landing pages with clear argumentation, social proof sections and visible CTAs. Fast integration and optimized for SEO and tracking.',
     gets: [
-      'Structure UX, copy et CTA optimisés',
-      'Intégration Next.js/Tailwind prête pour A/B test',
-      'Tracking analytics/events et SEO technique'
+      'Optimized UX structure, copy and CTAs',
+      'Next.js/Tailwind integration ready for A/B testing',
+      'Analytics/events tracking and technical SEO'
     ],
-    value: 'Plus de leads qualifiés et un coût d’acquisition maîtrisé grâce à des pages qui convertissent et chargent vite.',
-    subject: 'Devis — Landing page'
+    value: 'More qualified leads and controlled acquisition cost thanks to pages that convert and load fast.',
+    subject: 'Quote — Landing page'
   },
   {
-    title: 'Développement front-end de SaaS',
+    title: 'SaaS front-end development',
     description:
-      'Dashboards, modules métier et onboarding soignés : auth, rôles, formulaires complexes, tableaux filtrables, graphiques et exports CSV/PDF.',
+      'Polished dashboards, business modules and onboarding: auth, roles, complex forms, filterable tables, charts and CSV/PDF exports.',
     gets: [
-      'Architecture front modulaire (Next.js/React)',
-      'UI de dashboards (tables, charts, filtres, exports)',
-      'Flows d’onboarding, billing et notifications'
+      'Modular front-end architecture (Next.js/React)',
+      'Dashboard UI (tables, charts, filters, exports)',
+      'Onboarding flows, billing and notifications'
     ],
-    value: 'Un SaaS clair, fiable et performant qui améliore l’adoption et la rétention des utilisateurs.',
-    subject: 'Devis — Front SaaS'
+    value: 'A clear, reliable and performant SaaS that improves user adoption and retention.',
+    subject: 'Quote — SaaS front-end'
   },
   {
-    title: 'Refonte UX/UI + intégration',
+    title: 'UX/UI redesign + integration',
     description:
-      'Audit ciblé, maquettes légères puis intégration pixel-perfect. Parcours simplifiés, hiérarchie visuelle claire et performances préservées.',
+      'Targeted audit, light mockups then pixel-perfect integration. Simplified journeys, clear visual hierarchy and preserved performances.',
     gets: [
-      'Audit UX/UI et recommandations actionnables',
-      'Prototypes/maquettes et design system cohérent',
-      'Intégration Next.js/Tailwind optimisée'
+      'UX/UI audit and actionable recommendations',
+      'Prototypes/mockups and consistent design system',
+      'Optimized Next.js/Tailwind integration'
     ],
-    value: 'Moins de frictions et plus de conversions grâce à des parcours repensés et mesurables.',
-    subject: 'Devis — Refonte UX/UI'
+    value: 'Fewer frictions and more conversions thanks to redesigned and measurable journeys.',
+    subject: 'Quote — UX/UI redesign'
   },
   {
-    title: 'Intégration design → code propre, optimisé, pixel-perfect',
+    title: 'Design integration → clean, optimized, pixel-perfect code',
     description:
-      'Traduction fidèle des maquettes en composants performants. Respect des grilles, tokens, animations fines et accessibilité incluse.',
+      'Faithful translation of mockups into performant components. Respect for grids, tokens, fine animations and included accessibility.',
     gets: [
-      'Découpage en composants réutilisables',
-      'Respect strict du design (typographie, espacements, états)',
-      'Perf & accessibilité (lighthouse, aria, focus)'
+      'Breakdown into reusable components',
+      'Strict respect for design (typography, spacing, states)',
+      'Perf & accessibility (lighthouse, aria, focus)'
     ],
-    value: 'Livraison rapide sans dette front : produit cohérent, maintenable et prêt à évoluer.',
-    subject: 'Devis — Intégration design'
+    value: 'Fast delivery without front-end debt: consistent, maintainable product ready to evolve.',
+    subject: 'Quote — Design integration'
   }
 ] as const;
 
