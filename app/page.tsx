@@ -2,103 +2,112 @@
 export default function Home() {
   return (
     <main className="container">
-      <section className="section hero">
-        <p className="kicker">Freelance React & Next.js</p>
-        <h1>Salut, je suis Jade DOGO</h1>
-        <p className="muted">
-          Développeuse web spécialisée en React & Next.js — je conçois des interfaces modernes, performantes et pensées pour l’utilisateur.
-        </p>
-        <p className="muted" style={{ marginTop: 4 }}>
-          J’aide les entreprises, startups et indépendants à transformer leurs idées en produits digitaux efficaces et élégants.
-        </p>
-        <ul className="muted" style={{ display: 'grid', gap: 4, margin: '12px 0' }}>
-          <li>Performance & rapidité</li>
-          <li>Design moderne et expérience utilisateur soignée</li>
-          <li>Code propre, maintenable et évolutif</li>
-        </ul>
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-          <a className="btn" href="/#contact">Discutons de votre projet</a>
-          <a className="btn" href="/#contact">Réserver un appel gratuit</a>
-          <a className="btn" href="/#contact">Demander un devis</a>
-        </div>
-        <p className="badge" style={{ marginTop: 12 }}>
-          +5 projets réalisés • Expérience avec Next.js, React, TypeScript • Disponible pour missions freelance
-        </p>
-      </section>
-
-      <section className="section" aria-label="Disponibilité freelance">
-        <article className="card" style={{ borderStyle: 'dashed' }}>
-          <div className="content" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1, minWidth: 220 }}>
-              <p className="kicker" style={{ marginBottom: 4 }}>Disponibilité freelance</p>
-              <p className="muted" style={{ margin: 0 }}>
-                Disponible dès maintenant • Missions front-end React/Next.js, landing pages, SaaS.
-              </p>
+      <section id="home" className="section hero">
+        <div className="hero__grid">
+          <div className="hero__content">
+            <p className="kicker">Développeuse freelance</p>
+            <h1>
+              <span>Je crée des interfaces</span>
+              <span>web exceptionnelles</span>
+              <span>qui performent.</span>
+            </h1>
+            <p>
+              Je conçois des expériences front-end rapides, élégantes et orientées conversion — avec une vraie exigence produit.
+            </p>
+            <p>
+              Du cadrage au déploiement, je transforme vos idées en interfaces fiables et mémorables.
+            </p>
+            <ul className="muted hero__highlights">
+              <li>Alternance Ifremer • Projets data & UX</li>
+              <li>Élève ingénieure ISEN • Culture produit</li>
+              <li>+5 projets livrés • Livraison rapide & soignée</li>
+            </ul>
+            <div className="hero__cta">
+              <a className="btn" href="/#contact">Discutons de votre projet</a>
+              <a className="btn btn--ghost" href="/projects">Voir mes projets</a>
             </div>
-            <a className="btn" href="/#contact">Discutons de votre projet</a>
           </div>
-        </article>
+
+          <div className="hero__visual" aria-hidden="true">
+            <div className="hero__mockup">
+              <div className="hero__mockup-bar" />
+              <img
+                src="/assets/acceuil_leadslight.png"
+                alt="Aperçu projet"
+                width={520}
+                height={360}
+                loading="lazy"
+              />
+              <div className="hero__mockup-meta">
+                <span className="badge">Leadslight</span>
+                <span className="badge">Next.js</span>
+                <span className="badge">TypeScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero__scroll" aria-hidden="true">
+          <span />
+        </div>
       </section>
 
-      <section className="section" aria-labelledby="last-projects-title">
-        <h2 id="last-projects-title">Derniers projets</h2>
-        <div className="grid" role="list">
-          <article className="card" role="listitem">
+      <section id="projects" className="section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projets</h2>
+        <p className="muted">Une sélection de réalisations avec objectifs, résultats et stack.</p>
+        <div className="projects-grid">
+          <article className="project-card">
             <img
               src="/assets/acceuil_leadslight.png"
-              alt="Capture de Leadslight : tableau de bord des leads"
-              width={1200}
-              height={800}
+              alt="Leadslight - Mini CRM Next.js"
+              width={400}
+              height={300}
               loading="lazy"
             />
-            <div className="content">
+            <div className="project-content">
               <h3>Leadslight</h3>
-              <p className="muted">
-                Mini CRM Next.js/Prisma pour qualifier et suivre les leads avec exports CSV fiables.
-                Rôle : front-end, UX et data-layer. Impact : pipeline unifié et reporting immédiat.
-              </p>
-              <div>
-                <span className="badge">Next.js</span>{' '}
-                <span className="badge">TypeScript</span>{' '}
-                <span className="badge">Tailwind CSS</span>{' '}
-                <span className="badge">Prisma</span>{' '}
-                <span className="badge">PostgreSQL</span>
+              <p>Mini CRM pour qualifier et suivre les leads avec exports CSV fiables.</p>
+              <p className="muted">Résultat : pipeline unifié, reporting immédiat.</p>
+              <div className="project-tags">
+                <span className="badge">Next.js</span>
+                <span className="badge">TypeScript</span>
+                <span className="badge">Prisma</span>
               </div>
             </div>
           </article>
 
-          <article className="card" role="listitem">
+          <article className="project-card">
             <img
               src="/assets/page_d'acceuil_atelier-korrigan.png"
-              alt="Aperçu Atelier Korrigan : site vitrine artisanal"
-              width={1200}
-              height={800}
+              alt="Atelier Korrigan - Site vitrine"
+              width={400}
+              height={300}
               loading="lazy"
             />
-            <div className="content">
+            <div className="project-content">
               <h3>Atelier Korrigan</h3>
-              <p className="muted">
-                Vitrine premium Next.js pour pièces sur mesure. Rôle : UI/UX, intégration et SEO.
-                Impact : parcours simplifié, CTA visibles et davantage de demandes entrantes.
-              </p>
-              <div>
-                <span className="badge">Next.js</span>{' '}
-                <span className="badge">TypeScript</span>{' '}
+              <p>Vitrine premium pour pièces sur mesure avec parcours simplifié.</p>
+              <p className="muted">Résultat : CTA visibles, demandes entrantes en hausse.</p>
+              <div className="project-tags">
+                <span className="badge">Next.js</span>
                 <span className="badge">Tailwind CSS</span>
               </div>
             </div>
           </article>
         </div>
 
-        <p style={{ marginTop: 16 }}>
+        <p style={{ textAlign: 'center', marginTop: 48 }}>
           <a className="btn" href="/projects">Voir tous les projets</a>
+          <a className="btn" href="https://github.com/Jade2097" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 16 }}>Voir sur GitHub</a>
         </p>
       </section>
 
-      {/* Offres & disponibilité */}
-      <section className="section" aria-labelledby="offers-title">
-        <p className="kicker">Offres</p>
-        <h2 id="offers-title">Site vitrine & Mini‑SaaS</h2>
+      <section id="offers" className="section" aria-labelledby="offers-title">
+        <p className="kicker">Offres / Services</p>
+        <h2 id="offers-title">Ce que je fais, pour qui, et comment</h2>
+        <p className="muted">
+          Pour startups, PME, indépendants et équipes produit qui veulent aller vite sans sacrifier la qualité.
+        </p>
 
         <div className="grid">
           <article className="card">
@@ -128,21 +137,80 @@ export default function Home() {
           </article>
         </div>
 
+        <div className="muted" style={{ marginTop: 16 }}>
+          <p><strong>Méthode :</strong> cadrage express → maquettes rapides → build → itérations → livraison.</p>
+          <p><strong>Format :</strong> forfait clair ou journée (selon scope).</p>
+        </div>
+
         <p style={{ marginTop: 16 }}>
           <a className="btn" href="/#contact">Parler de votre besoin</a>
         </p>
       </section>
 
+      <section id="skills" className="section" aria-labelledby="skills-title">
+        <p className="kicker">Compétences techniques</p>
+        <h2 id="skills-title">Stack & outils</h2>
+        <div className="grid">
+          <article className="card">
+            <div className="content">
+              <h3>Front-end</h3>
+              <p className="muted">React, Next.js, TypeScript, Vite, Tailwind, GSAP.</p>
+              <p className="muted">Design system, accessibilité, performance, SEO technique.</p>
+            </div>
+          </article>
+          <article className="card">
+            <div className="content">
+              <h3>Back / Data</h3>
+              <p className="muted">Prisma, PostgreSQL, Supabase, API REST.</p>
+              <p className="muted">Auth, exports, dashboards, analytics.</p>
+            </div>
+          </article>
+          <article className="card">
+            <div className="content">
+              <h3>Méthodo</h3>
+              <p className="muted">Cadrage, priorisation, sprints courts, livraison itérative.</p>
+              <p className="muted">Documentation, handoff propre, maintenance facile.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" className="section" aria-labelledby="about-title">
+        <p className="kicker">À propos</p>
+        <h2 id="about-title">Humain, curiosité et sens du détail</h2>
+        <p className="muted">
+          Mon parcours allie rigueur d’ingénierie et culture design. J’aime les interfaces claires, le travail bien fait et les collaborations fluides.
+        </p>
+        <p className="muted">
+          Je m’adapte vite, j’avance avec méthode et je garde l’objectif business en ligne de mire.
+        </p>
+      </section>
+
+      <section className="section" aria-labelledby="bts-title">
+        <p className="kicker">Behind the scenes</p>
+        <h2 id="bts-title">Ce qui me recharge</h2>
+        <details className="card" style={{ maxWidth: 760, margin: '0 auto' }}>
+          <summary className="content" style={{ cursor: 'pointer' }}>Voir les coulisses</summary>
+          <div className="content">
+            <ul>
+              <li>Crochet & artisanat</li>
+              <li>Musculation & discipline</li>
+              <li>Lectures (produit, design, entrepreneuriat)</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
       <section id="contact" className="section scroll-mt-24">
         <h2>Contact</h2>
         <p className="muted">
-          Je suis disponible pour vos projets freelance : landing pages, front-end, intégrations, applications Next.js, refontes…
+          Dispo pour vos projets front-end : landing pages, SaaS, intégrations, refontes…
         </p>
-        <p className="muted">Réponse assurée sous 24 à 48h.</p>
-        <p className="muted">Décrivez-moi votre projet, je reviens vers vous très vite.</p>
+        <p className="muted">Réponse assurée sous 24 à 48h, avec un plan clair et une estimation.</p>
+        <p className="muted">Décrivez votre besoin, je vous réponds rapidement et concrètement.</p>
 
         <p style={{ marginTop: 12 }}>
-          <a href="mailto:jadedogo08@gmail.com" className="btn">jadedogo08@gmail.com</a>
+          <a href="mailto:jadedogo08@gmail.com">jadedogo08@gmail.com</a>
         </p>
 
         <div style={{ marginTop: 16 }} className="muted">

@@ -2,6 +2,9 @@
 export type Project = {
   title: string;
   description: string;
+  year: string;
+  type: string;
+  badge?: string;
   role: string;
   tech: string[];
   challenge: string;
@@ -15,6 +18,9 @@ export const projects: Project[] = [
   {
     title: "Leadslight — mini CRM pour équipes commerciales",
     description: "Projet personnel professionnel pour accélérer la qualification et le suivi des leads, avec exports CSV fiables.",
+    year: "2024",
+    type: "SaaS / CRM",
+    badge: "Featured",
     role: "Développement front-end Next.js, intégration UI/UX, data-layer Prisma/PostgreSQL",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
     challenge: "Concevoir une interface rapide pour créer/mettre à jour des leads et générer des exports CSV cohérents.",
@@ -26,6 +32,9 @@ export const projects: Project[] = [
   {
     title: "Atelier Korrigan — vitrine premium pour atelier créatif",
     description: "Site vitrine professionnel pour présenter des pièces sur mesure et faciliter la prise de contact.",
+    year: "2023",
+    type: "Site vitrine",
+    badge: "Origin",
     role: "Conception UI/UX, intégration Next.js/Tailwind et optimisation SEO",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     challenge: "Combiner un rendu élégant avec des temps de chargement courts sur mobile.",
