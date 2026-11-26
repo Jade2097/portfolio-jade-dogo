@@ -1,227 +1,60 @@
-// app/page.tsx
 export default function Home() {
   return (
-    <main className="container">
-      <section id="home" className="section hero">
-        <div className="hero__grid">
-          <div className="hero__content">
-            <p className="kicker">Développeuse freelance</p>
-            <h1>
-              <span>Je crée des interfaces</span>
-              <span>web exceptionnelles</span>
-              <span>qui performent.</span>
-            </h1>
-            <p>
-              Je conçois des expériences front-end rapides, élégantes et orientées conversion — avec une vraie exigence produit.
-            </p>
-            <p>
-              Du cadrage au déploiement, je transforme vos idées en interfaces fiables et mémorables.
-            </p>
-            <ul className="muted hero__highlights">
-              <li>Alternance Ifremer • Projets data & UX</li>
-              <li>Élève ingénieure ISEN • Culture produit</li>
-              <li>+5 projets livrés • Livraison rapide & soignée</li>
-            </ul>
-            <div className="hero__cta">
-              <a className="btn" href="/#contact">Discutons de votre projet</a>
-              <a className="btn btn--ghost" href="/projects">Voir mes projets</a>
-            </div>
-          </div>
-
-          <div className="hero__visual" aria-hidden="true">
-            <div className="hero__mockup">
-              <div className="hero__mockup-bar" />
-              <img
-                src="/assets/acceuil_leadslight.png"
-                alt="Aperçu projet"
-                width={520}
-                height={360}
-                loading="lazy"
-              />
-              <div className="hero__mockup-meta">
-                <span className="badge">Leadslight</span>
-                <span className="badge">Next.js</span>
-                <span className="badge">TypeScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero__scroll" aria-hidden="true">
-          <span />
-        </div>
-      </section>
-
-      <section id="projects" className="section" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projets</h2>
-        <p className="muted">Une sélection de réalisations avec objectifs, résultats et stack.</p>
-        <div className="projects-grid">
-          <article className="project-card">
-            <img
-              src="/assets/acceuil_leadslight.png"
-              alt="Leadslight - Mini CRM Next.js"
-              width={400}
-              height={300}
-              loading="lazy"
-            />
-            <div className="project-content">
-              <h3>Leadslight</h3>
-              <p>Mini CRM pour qualifier et suivre les leads avec exports CSV fiables.</p>
-              <p className="muted">Résultat : pipeline unifié, reporting immédiat.</p>
-              <div className="project-tags">
-                <span className="badge">Next.js</span>
-                <span className="badge">TypeScript</span>
-                <span className="badge">Prisma</span>
-              </div>
-            </div>
-          </article>
-
-          <article className="project-card">
-            <img
-              src="/assets/page_d'acceuil_atelier-korrigan.png"
-              alt="Atelier Korrigan - Site vitrine"
-              width={400}
-              height={300}
-              loading="lazy"
-            />
-            <div className="project-content">
-              <h3>Atelier Korrigan</h3>
-              <p>Vitrine premium pour pièces sur mesure avec parcours simplifié.</p>
-              <p className="muted">Résultat : CTA visibles, demandes entrantes en hausse.</p>
-              <div className="project-tags">
-                <span className="badge">Next.js</span>
-                <span className="badge">Tailwind CSS</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <p style={{ textAlign: 'center', marginTop: 48 }}>
-          <a className="btn" href="/projects">Voir tous les projets</a>
-          <a className="btn" href="https://github.com/Jade2097" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 16 }}>Voir sur GitHub</a>
-        </p>
-      </section>
-
-      <section id="offers" className="section" aria-labelledby="offers-title">
-        <p className="kicker">Offres / Services</p>
-        <h2 id="offers-title">Ce que je fais, pour qui, et comment</h2>
-        <p className="muted">
-          Pour startups, PME, indépendants et équipes produit qui veulent aller vite sans sacrifier la qualité.
-        </p>
-
-        <div className="grid">
-          <article className="card">
-            <div className="content">
-              <h3>Site vitrine SEO + blog</h3>
-              <p className="muted">Chargement &lt; 1 s mobile, base SEO prête, édition via CMS.</p>
-              <ul>
-                <li>Design léger, pages clés, blog CMS</li>
-                <li>Déploiement Vercel, SEO technique</li>
-              </ul>
-              <p className="badge">Stack: Next.js, TypeScript, Tailwind, Sanity/Strapi, Vercel</p>
-              <p className="price">Délai: 10–15 j • À partir de: 1 800 € HT</p>
-            </div>
-          </article>
-
-          <article className="card">
-            <div className="content">
-              <h3>Mini‑SaaS (MVP)</h3>
-              <p className="muted">Automatiser les tâches répétitives et clarifier le suivi des données.</p>
-              <ul>
-                <li>Auth, 2–3 modules CRUD, export CSV/PDF</li>
-                <li>Stripe abonnements, admin, doc</li>
-              </ul>
-              <p className="badge">Stack: Next.js, Nest/Express, Prisma, PostgreSQL (Supabase), Stripe</p>
-              <p className="price">Délai: 4–6 sem • À partir de: 4 000 € HT</p>
-            </div>
-          </article>
-        </div>
-
-        <div className="muted" style={{ marginTop: 16 }}>
-          <p><strong>Méthode :</strong> cadrage express → maquettes rapides → build → itérations → livraison.</p>
-          <p><strong>Format :</strong> forfait clair ou journée (selon scope).</p>
-        </div>
-
-        <p style={{ marginTop: 16 }}>
-          <a className="btn" href="/#contact">Parler de votre besoin</a>
-        </p>
-      </section>
-
-      <section id="skills" className="section" aria-labelledby="skills-title">
-        <p className="kicker">Compétences techniques</p>
-        <h2 id="skills-title">Stack & outils</h2>
-        <div className="grid">
-          <article className="card">
-            <div className="content">
-              <h3>Front-end</h3>
-              <p className="muted">React, Next.js, TypeScript, Vite, Tailwind, GSAP.</p>
-              <p className="muted">Design system, accessibilité, performance, SEO technique.</p>
-            </div>
-          </article>
-          <article className="card">
-            <div className="content">
-              <h3>Back / Data</h3>
-              <p className="muted">Prisma, PostgreSQL, Supabase, API REST.</p>
-              <p className="muted">Auth, exports, dashboards, analytics.</p>
-            </div>
-          </article>
-          <article className="card">
-            <div className="content">
-              <h3>Méthodo</h3>
-              <p className="muted">Cadrage, priorisation, sprints courts, livraison itérative.</p>
-              <p className="muted">Documentation, handoff propre, maintenance facile.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="about" className="section" aria-labelledby="about-title">
-        <p className="kicker">À propos</p>
-        <h2 id="about-title">Humain, curiosité et sens du détail</h2>
-        <p className="muted">
-          Mon parcours allie rigueur d’ingénierie et culture design. J’aime les interfaces claires, le travail bien fait et les collaborations fluides.
-        </p>
-        <p className="muted">
-          Je m’adapte vite, j’avance avec méthode et je garde l’objectif business en ligne de mire.
-        </p>
-      </section>
-
-      <section className="section" aria-labelledby="bts-title">
-        <p className="kicker">Behind the scenes</p>
-        <h2 id="bts-title">Ce qui me recharge</h2>
-        <details className="card" style={{ maxWidth: 760, margin: '0 auto' }}>
-          <summary className="content" style={{ cursor: 'pointer' }}>Voir les coulisses</summary>
-          <div className="content">
-            <ul>
-              <li>Crochet & artisanat</li>
-              <li>Musculation & discipline</li>
-              <li>Lectures (produit, design, entrepreneuriat)</li>
-            </ul>
-          </div>
-        </details>
-      </section>
-
-      <section id="contact" className="section scroll-mt-24">
-        <h2>Contact</h2>
-        <p className="muted">
-          Dispo pour vos projets front-end : landing pages, SaaS, intégrations, refontes…
-        </p>
-        <p className="muted">Réponse assurée sous 24 à 48h, avec un plan clair et une estimation.</p>
-        <p className="muted">Décrivez votre besoin, je vous réponds rapidement et concrètement.</p>
-
-        <p style={{ marginTop: 12 }}>
-          <a href="mailto:jadedogo08@gmail.com">jadedogo08@gmail.com</a>
-        </p>
-
-        <div style={{ marginTop: 16 }} className="muted">
-          <p style={{ marginBottom: 4 }}>Champs suggérés pour votre message :</p>
-          <ul style={{ marginTop: 0 }}>
-            <li>Nom</li>
-            <li>Email</li>
-            <li>Message / description du projet</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+    <>
+    <section className="wrap hero editorial" aria-labelledby="titre">
+    <p className="eyebrow">Développeuse web &amp; logiciel freelance · Brest / à distance</p>
+    <h1 id="titre">Jade <em>Dogo</em></h1>
+    <div className="hero-foot">
+    <p className="intro">Je crée des interfaces React, j’automatise des tâches avec Python et j’aide à fiabiliser les logiciels existants.</p>
+    <div className="actions"><a className="button" href="#projets">Voir mes projets</a><a className="button secondary" href="#contact">Discutons de votre projet</a></div>
+    </div>
+    </section>
+    <section className="wrap projects" id="projets">
+    <div className="section-head"><div><p className="eyebrow">Portfolio</p><h2>Projets choisis</h2></div><a className="textlink" href="https://github.com/Jade2097">Mon profil GitHub</a></div>
+    <article className="feature">
+    <div className="feature-copy">
+    <p className="category">Ifremer · Euro-Argo · React</p>
+    <h3>Software Evaluator</h3>
+    <p>Une application web qui rassemble les indicateurs de qualité des logiciels Euro-Argo. J’ai développé l’interface React, intégré les badges et organisé les résultats pour faciliter leur consultation.</p>
+    </div>
+    <div className="feature-art">
+    <p>Ce que l’outil rassemble</p>
+    <ul><li><span>01</span> Résultats des tests</li><li><span>02</span> Couverture du code</li><li><span>03</span> Indicateurs par logiciel</li></ul>
+    </div>
+    </article>
+    <article className="argopy">
+    <div><p className="category">Open source · Python</p><h3>argopy</h3></div>
+    <div><p>Je contribue à la maintenance d’une bibliothèque d’accès aux données océanographiques Argo. Mon travail porte sur la correction de tests, la résolution d’issues et la compatibilité multiplateforme.</p><a className="textlink" href="https://github.com/euroargodev/argopy">Voir le dépôt argopy</a></div>
+    </article>
+    <div className="grid">
+    <article className="project">
+    <a className="visual lead" href="https://leadslight.vercel.app/" aria-label="Voir la démo Leadslight"><img src="/assets/acceuil_leadslight.png" alt="Capture de l’interface Leadslight" width="1306" height="920" loading="lazy" /></a>
+    <div className="card-body"><p className="category">Application web · CRM</p><h3>Leadslight</h3><p>Un mini CRM pour qualifier les prospects, suivre les échanges et exporter les données au format CSV.</p><ul className="tags" aria-label="Technologies"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li></ul><div className="links"><a href="https://leadslight.vercel.app/">Voir la démo <span className="sr">Leadslight</span></a><a href="https://github.com/Jade2097/leadslight">Code source <span className="sr">de Leadslight</span></a></div></div>
+    </article>
+    <article className="project">
+    <a className="visual atelier" href="https://atelier-korrigan.vercel.app/" aria-label="Voir la démo Atelier Korrigan"><img src="/assets/page_d'acceuil_atelier-korrigan.png" alt="Capture du site Atelier Korrigan" width="1318" height="1056" loading="lazy" /></a>
+    <div className="card-body"><p className="category">Site vitrine · Artisanat</p><h3>Atelier Korrigan</h3><p>Une vitrine pour présenter des pièces sur mesure et faciliter la prise de contact avec l’atelier.</p><ul className="tags" aria-label="Technologies"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li></ul><div className="links"><a href="https://atelier-korrigan.vercel.app/">Voir la démo <span className="sr">Atelier Korrigan</span></a><a href="https://github.com/Jade2097/atelier-korrigan">Code source <span className="sr">d’Atelier Korrigan</span></a></div></div>
+    </article>
+    </div>
+    </section>
+    <section className="services" id="services"><div className="wrap">
+    <p className="eyebrow">Services freelance</p><h2>Ce que je peux créer pour vous</h2>
+    <div className="grid service-grid">
+    <article><h3>Créer ou refondre un site</h3><p>Sites vitrines, landing pages et composants React. J’intègre des interfaces adaptées aux mobiles et ordinateurs.</p></article>
+    <article><h3>Automatiser une tâche</h3><p>Scripts Python pour traiter des fichiers, transformer des données ou simplifier une opération récurrente.</p></article>
+    <article><h3>Améliorer un logiciel</h3><p>Correction de bugs, tests automatisés et workflows GitHub Actions pour vos projets existants.</p></article>
+    </div>
+    <p className="method">On définit ensemble les priorités, puis je passe des maquettes au développement. Vous pouvez tester et donner votre avis avant la mise en ligne.</p>
+    <a className="textlink" href="#contact">Parler de votre besoin</a>
+    </div></section>
+    <section className="wrap about" id="a-propos">
+    <div><p className="eyebrow">À propos</p><h2>Enchantée, moi c’est Jade.</h2><p>Je suis élève ingénieure à l’ISEN et alternante à l’Ifremer, où je contribue à des outils pour les données océanographiques. En freelance, j’applique la même attention à la qualité du code et aux détails qui rendent un site agréable à utiliser.</p></div>
+    <div className="skills"><h3>Mes outils</h3><dl><dt>Front-end</dt><dd>React, Next.js, TypeScript, Tailwind CSS</dd><dt>Back-end &amp; données</dt><dd>API REST, Prisma, PostgreSQL, Supabase, Python</dd></dl></div>
+    </section>
+    <section className="wrap" id="contact"><div className="contact">
+    <div><p className="eyebrow">Contact</p><h2>Parlons de votre projet.</h2><p>Vous avez une idée de site, une refonte ou une application à lancer ? Écrivez-moi quelques lignes sur votre besoin.</p></div>
+    <a className="button" href="mailto:jadogo2097@gmail.com">M’écrire par e-mail</a>
+    </div></section>
+    </>
   );
 }
