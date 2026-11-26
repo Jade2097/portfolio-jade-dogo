@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: 'Projets — Jade DOGO' };
 
 export default function ProjetsPage() {
   return (
-    <main className="container">
+    <div className="container">
       <h1>Mes projets</h1>
       <p className="muted">Quelques réalisations récentes.</p>
 
@@ -20,6 +20,6 @@ export default function ProjetsPage() {
           />
         ))}
       </div>
-    </main>
+    </div>
   );
 }

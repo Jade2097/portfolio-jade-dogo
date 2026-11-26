@@ -42,7 +42,7 @@ export default function CustomCursor() {
       if (!target) return;
       document.documentElement.classList.add('cursor-hover');
       const dataLabel = target.getAttribute('data-cursor');
-      setLabel(dataLabel || (target.tagName === 'A' || target.tagName === 'BUTTON' ? 'Voir' : ''));
+      setLabel(dataLabel || '');
     };
 
     const onOut = () => {
