@@ -43,3 +43,5 @@ node_modules
 .next
 .env*
 .DS_Store
+
+/public/assets/
